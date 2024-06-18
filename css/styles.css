@@ -19,6 +19,11 @@ nav ul {
     transition: max-height .2s ease-out;
 }
 
+#MuzakMaker {
+    /* float: right;
+    position: absolute; */
+}
+
 nav h2 {
     visibility: hidden; 
     height: 1px; 
@@ -152,7 +157,7 @@ audio::-webkit-media-controls-enclosure {
         width: 834px;
     }
 
-    ul {
+    nav ul {
         overflow: visible;
         position: absolute;
         top: 0;
