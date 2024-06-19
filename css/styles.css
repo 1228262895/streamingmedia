@@ -21,6 +21,8 @@ body {
     font-variant: small-caps;
     font-weight: bold;
     font-size: x-large;
+    /* padding-bottom: 10px; */
+    padding-left: 10px;
     /* margin-top: 5px;
     margin-bottom: 10px; */
     /* min-height: 60px; */
@@ -57,7 +59,7 @@ nav {
 }
 
 #menu { 
-    max-height: 60px;
+    max-height: 50px;
     background-color: #030A8C;
     overflow: hidden;
     grid-column: 1 / 5;
@@ -76,8 +78,8 @@ header {
 
 header h1 { 
     grid-row: 2 / 3;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 25px;
     margin-right: 25px;
     color: white; 
@@ -178,7 +180,7 @@ footer p {
 nav label {
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px;
+    padding: 22px 20px;
     position: relative;
     user-select: none;
 }
@@ -316,7 +318,7 @@ audio::-webkit-media-controls-enclosure {
     }
     
     nav li a {
-        padding: 10px 0px;
+        padding: 5px 0px 5px 0px;
     }
 
     label span, input {
