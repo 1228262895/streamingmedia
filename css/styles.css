@@ -128,16 +128,6 @@ nav a:hover, nav input:hover {
 
 
 
-
-/* REDUNDANCY
--------------- */
-/* ul {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-} */
-
-
 /* H1, h2, h3, p, dl, dd, FOOTER
 --------------------------------------------- */
 h1 {
@@ -160,28 +150,17 @@ footer p {
 }
 
 #MuzakMaker {
- 
     font-variant: small-caps;
-    /* font-weight: bold; */
     font-size: x-large;
-    /* padding-bottom: 10px; */
     padding-left: 10px;
-    /* margin-top: 5px;
-    margin-bottom: 10px; */
-    /* min-height: 60px; */
-    /* width: 200px; */
     display: block; 
     width: 100%;
     padding: 10px 10px 10px 10px; 
     text-decoration: none;
     color: white;
-
 }
 
-/* DISPLAY NONE instead of VISIBILITY HIDDEN */
 #hamburger{
-    /* display: none; */
-    /* display: inline-block; */
     grid-column-start: 1;
     grid-column-end: 2;
     z-index: 2;
@@ -230,7 +209,8 @@ label span:after {
 /* Trending,  Buttons
 --------------------------------------------- */
 #trending {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     height: 340px;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -240,8 +220,18 @@ label span:after {
 #trending figure {
     display: inline-grid;
     margin-top: 8px; 
-    margin-left: 5px;
-    margin-right: -300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-right: -300px; */
+
+}
+
+#trending audio {
+    bottom: 280px;
+    left: 5px;
+    /* margin: auto; */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #trending figcaption {
@@ -306,10 +296,7 @@ p {
 --------------------------------------------- */
 
 #playlists {
-    /* clear: both; 
-    display: grid; 
-    grid-template-rows: 300px 300px; */
-    /* grid-template-rows: 75px 500px 75px; */
+    
 }
 
 
