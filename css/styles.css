@@ -226,14 +226,57 @@ label span:after {
 }
 
 
-/* Trending, Your Playlists, Curated Playlists
+/* Trending, Your (playlists), Curated (playlists), Button
 --------------------------------------------- */
 #trending {
     display: flex;
-    overflow: scroll;
+    height: 340px;
+    overflow-y: hidden;
+    overflow-x: scroll;
 
 }
 
+#trending figure {
+    display: inline-grid;
+    /* height: 200px; */
+    margin: 8px;
+
+}
+
+#trending figcaption {
+    position: relative;
+    top: -61px;
+    background-color: rgb(255, 255, 255, .3); 
+    /* opacity: .5; */
+}
+
+#trending h3 {
+    margin: 5px 0px;
+    margin-left: 10px; 
+}
+
+dd, dt {
+    float:left; 
+    margin-left: 10px; 
+    padding-bottom: 10px; 
+}
+
+dt {
+    font-style: italic;
+    float: left;
+}
+
+
+
+audio {
+    margin: auto;
+    border-radius: 25px;
+    position: relative;
+    top: -300px;
+    /* background-color: rgb(255, 255, 255, .99); */
+    background-color: white;
+    opacity: .8;
+}
 
 .button {
     color: white; 
@@ -243,8 +286,11 @@ label span:after {
     height: 30px; 
     border-radius: 8px; 
     border: none; 
-    
 
+
+}
+.button:hover {
+    background-color: #020659;
 }
 
 
