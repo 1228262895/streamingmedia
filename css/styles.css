@@ -188,15 +188,6 @@ footer p {
 }
 
 
-/* Trending, Your Playlists, Curated Playlists
---------------------------------------------- */
-#trending {
-    display: flex;
-    overflow: scroll;
-
-}
-
-
 
 
 
@@ -233,6 +224,30 @@ label span:before {
 label span:after {
     top: -5px;
 }
+
+
+/* Trending, Your Playlists, Curated Playlists
+--------------------------------------------- */
+#trending {
+    display: flex;
+    overflow: scroll;
+
+}
+
+
+.button {
+    color: white; 
+    text-decoration: none;
+    background-color: #590242; 
+    width: 150px;
+    height: 30px; 
+    border-radius: 8px; 
+    border: none; 
+    
+
+}
+
+
 
 /* input
 --------------------------------------------- */
@@ -350,5 +365,11 @@ audio::-webkit-media-controls-enclosure {
 
     label span, input {
         display: none;
+    }
+
+
+    .button {
+        float: right;
+        margin-right: 30px;
     }
 }
