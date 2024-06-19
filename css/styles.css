@@ -1,44 +1,136 @@
 
 
+
+html {
+    background-color: #020659;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body { 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+}
+
+
+
+
+#MuzakMaker {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: x-large;
+    /* margin-top: 5px;
+    margin-bottom: 10px; */
+    /* min-height: 60px; */
+    /* width: 200px; */
+
+}
+
+
+
+
+main {
+    background-color: white;
+    width: 375px;
+}
+
+h2 {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
 /* NAVIGATION
 --------------------------------------------- */
 
 nav {
+    /* background-color: purple; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0px;
+    position: absolute;
+    top: 0px;
     width: 375px;
-    background-color: purple;
 
 }
 
+#menu { 
+    max-height: 60px;
+    background-color: #030A8C;
+    overflow: hidden;
+    grid-column: 1 / 5;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 375px;
+}
+
+header {
+    background: linear-gradient(90deg,#2104D1, #020873, #020659);
+    display: grid; 
+    grid-template-rows: 60px 40px 1fr;
+    margin: 0px;
+}
+
+header h1 { 
+    grid-row: 2 / 3;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white; 
+
+}
+
+header p {
+    grid-row: 3 / 4;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    
+}
+
 nav ul {
-    text-align: center; 
+    /* text-align: center;  */
     margin: 0; 
     padding: 0; 
+    width: 100%;
     list-style: none; 
     overflow: hidden; 
     max-height: 0; 
     transition: max-height .2s ease-out;
 }
 
-#MuzakMaker {
-    /* float: right;
-    position: absolute; */
-}
+
 
 nav h2 {
     visibility: hidden; 
     height: 1px; 
 }
 
+nav li {
+    padding: none;
+    width: 100%;
+    /* text-align: center; */
+}
 nav li a { 
     display: block; 
-    padding: 20px 20px; 
+    width: 100%;
+    padding: 10px 10px; 
     text-decoration: none; 
     color: white;
 }
 
 nav a:hover, nav input:hover { 
-    background-color: black;
+    background-color: #590242;
 }
+
+
+
 
 
 /* REDUNDANCY
@@ -49,7 +141,41 @@ nav a:hover, nav input:hover {
     transition: max-height .2s ease-out;
 } */
 
-label {
+
+/* H1, h2, h3, p, dl, dd, FOOTER
+--------------------------------------------- */
+h1 {
+    font-size:1.25em;
+}
+
+h2, h3 {
+    font-size: 1em;
+}
+
+p, dl, dd {
+    font-size: 1em;
+}
+
+footer p {
+    font-size: .75em;
+}
+
+
+
+/* DISPLAY NONE instead of VISIBILITY HIDDEN */
+#hamburger{
+    /* display: none; */
+    /* display: inline-block; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 2;
+    position: relative;
+}
+
+/* label
+--------------------------------------------- */
+
+nav label {
     cursor: pointer;
     display: inline-block;
     padding: 28px 20px;
@@ -81,11 +207,11 @@ label span:after {
 }
 
 
-/* DISPLAY NONE instead of VISIBILITY HIDDEN */
+
 input {
     display: none;
 }
-input:checked ~ ul {
+input:checked ~ #menu {
     max-height: 500px;
 }
 input:checked ~ label span {
@@ -153,20 +279,44 @@ audio::-webkit-media-controls-enclosure {
 
 @media screen and (min-width:834px) {
 
+    body { 
+        width: 834px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    main {
+        width: 834px;
+    }
+
     nav {
         width: 834px;
     }
 
+    #menu {
+        overflow:visible;
+        width: 834px;
+    }
+
     nav ul {
+        width: 834px;
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   
+    }
+
+    nav li {
+        width: 166px;
     }
     
     nav li a {
-        padding: 20px;
+        padding: 10px 0px;
     }
 
     label span, input {
