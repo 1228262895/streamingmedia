@@ -187,6 +187,19 @@ footer p {
     position: relative;
 }
 
+
+/* Trending, Your Playlists, Curated Playlists
+--------------------------------------------- */
+#trending {
+    display: flex;
+    overflow: scroll;
+
+}
+
+
+
+
+
 /* label
 --------------------------------------------- */
 
@@ -221,7 +234,8 @@ label span:after {
     top: -5px;
 }
 
-
+/* input
+--------------------------------------------- */
 
 input {
     display: none;
